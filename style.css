@@ -1,0 +1,117 @@
+*{
+  border: 1px solid black;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+body, h1,h2{
+  margin: 0;
+  padding: 0;
+}
+.wrap{
+  width: 1048px;
+  margin: 0 auto;
+}
+h1{
+  font-size: 40px;
+  color: #000;
+}
+
+.logo{
+  position: absolute;
+  left: 123px;
+  width: 92px;
+  height: 88px;
+  background: url("./image/logoFDP2.jpg");
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+section{
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.header{
+  height: 10em;
+}
+.header p{
+  color: #000;
+}
+p{
+  color: #cdcdcd;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category{
+  margin-top: 20px;
+  width: 800px;
+  height: 400px;
+}
+h2{
+  margin-top: 75px;
+}
+.robot{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./image/robot.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0;
+}
+
+.it{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./image/it.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.model{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./image/model.jpg");;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+a {
+text-decoration: none;
+text-transform: uppercase;
+}
+.button {
+    display: inline-block;
+    /* margin-top: 1em; */
+    color: #fff;
+    background-color: #ffa64c;
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 0.6em 2em;
+    /* border-radius: 0.9em; */
+}
+footer{
+  height: 100px;
+}
+
+@media (max-width: 700px) {
+  *{
+    border: none;
+  }
+.logo{
+  display: none;
+}
+  .category{
+    margin-top: 0;
+    width: 100%;
+    height: 400px;
+  }
+  .wrap{
+    width: inherit;
+  }
+
+  h2{
+    margin-top: 0;
+  }
+}
