@@ -4,38 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap" rel="stylesheet">
-  <link href="./style.css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link href="./style.css" rel="stylesheet"> -->
+  <style>
+    .robot{
+      background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./image/robot.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 0;
+    }
+    .it{
+      background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./image/it.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .model{
+      background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("./image/model.jpg");;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    @media (max-width: 600px){
+      .it{
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
   <title>Инженерная школа</title>
 </head>
 <body>
-  <div class="wrap">
-  <section class="header flex">
-    <div>
-    <h1>Инженерная школа</h1>
-    <p>Образовательный портал</p>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+        <h1>Инженерная школа</h1>
+        <p>Образовательный портал</p>
+        <div class="logo"></div>
+      </div>
     </div>
-    <div class="logo"></div>
-  </section>
 
-  <section class="category robot flex">
-    <div><h2>Робототехника (техника)</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia accusamus recusandae ex dicta et. Possimus exercitationem magni ipsam amet?</p>
-    <a href="#" class="button">Подробнее</a></div>
-  </section>
-  <section class="category it flex">
-    <div>
-    <h2>IT (программирование)</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia accusamus recusandae ex dicta et. Possimus exercitationem magni ipsam amet?</p>
-    <a href="#" class="button">Подробнее</a></div>
-  </section>
+    <div class="row mt-3">
+      <div class="col-md-10 text-center robot text-white mx-auto p-5">
+        <div><h2>Робототехника (техника)</h2>
+          <p class="col-md-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia accusamus recusandae ex dicta et. Possimus exercitationem magni ipsam amet?</p>
+          <a href="#" class="btn btn-warning">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <div class="col-md-10 text-center text-white it mx-auto p-5">
+        <h2>IT (программирование)</h2>
+        <p class="col-md-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia accusamus recusandae ex dicta et. Possimus exercitationem magni ipsam amet?</p>
+        <a href="#" class="btn btn-warning">Подробнее</a>
+      </div>
+    </div>
 
-  <section class="category model flex">
-      <div><h2>Моделирование</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia accusamus recusandae ex dicta et. Possimus exercitationem magni ipsam amet?</p> 
-      <a href="#" class="button">Подробнее</a></div>
-    </section>
-  <footer>&COPY;</footer>
-</div>
+    <div class="row mt-5">
+      <div class="col-md-10 text-center text-white model mx-auto p-5">
+        <h2>Моделирование</h2>
+        <p class="col-md-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia accusamus recusandae ex dicta et. Possimus exercitationem magni ipsam amet?</p> 
+        <a href="#" class="btn btn-warning">Подробнее</a>
+      </div>
+    </div>
+    
+    <footer class="col-md-12 text-center mt-2">&COPY;</footer>
+  </div>
 </body>
 </html>
