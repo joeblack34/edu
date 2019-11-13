@@ -55,8 +55,14 @@
       margin-right: 4px;
     }
 
-    @media (max-width: 600px){
-      
+    .logo{
+      position: absolute;
+      margin-left: 80px;
+    }
+    @media (max-width: 1000px){
+      .logo{
+      display: none;
+    }
     }
   </style>
   <title>Инженерная школа</title>
@@ -65,6 +71,7 @@
   <div class="container">
     <div class="row mt-5">
       <div class="col-md-12 text-center">
+        <div class="logo"><img src="./image/logoFDP2.jpg" width="100px" alt=""></div>
         <h1>Инженерная школа</h1>
         <p>Образовательные курсы для школьников</p>
         <div class="logo"></div>
@@ -123,7 +130,7 @@
       </div>
     </div>
 
-    <footer class="col-md-12 text-center mt-3">
+    <footer class="col-md-12 text-center mt-3 mb-5">
         <div>Контактная информация</div> 
         <div>Адрес: 400005, г.Волгоград ул.Советская, д.35 ауд. 507, 514</div>
         <div>Тел.: 24 84 23, 24 84 21, 8 961 062 43 19</div>
