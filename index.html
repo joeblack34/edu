@@ -7,8 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <style>
+    header {
+      /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./image/electronic.jpg"); */
+    }
 
     .young_engineer {
       background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./image/electronic.jpg");
@@ -30,11 +33,16 @@
       background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./image/mathematics-1509559_1280.jpg");
     }
 
-    .young_engineer, .robot, .it, .model, .discipline{
+    .young_engineer,
+    .robot,
+    .it,
+    .model,
+    .discipline {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
+
     .outer_class {
       display: inline-block;
       color: #ffc107;
@@ -57,15 +65,31 @@
       margin-bottom: 6px;
     }
 
-    footer div i{
+    footer div i {
       padding-right: 5px;
       font-size: 20px !important;
     }
+
+
 
     @media (max-width: 1000px) {
       .logo {
         display: none;
       }
+
+      h1 {
+        font-size: 60px !important;
+      }
+    }
+
+    @media (max-width: 763px) {
+      h1 {
+        font-size: 3em !important;
+      }
+    }
+
+    header .desc{
+      font-weight: 600;
     }
   </style>
   <title>Инженерная школа</title>
@@ -73,77 +97,84 @@
 
 <body>
   <div class="container">
-    <div class="row mt-5">
-      <div class="col-md-12 text-center">
-        <div class="logo"><img src="./image/logoFDP2.jpg" width="100px" alt=""></div>
-        <h1>Инженерная школа</h1>
-        <p>Образовательные курсы для школьников</p>
-        <div class="logo"></div>
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-md-10 text-center young_engineer text-white mx-auto pt-5 pb-5">
-        <h2>Юный инженер</h2>
-        <div class="mx-auto outer_class">1-3 классы</div>
-        <p class="col-md-9 mx-auto">Курс ориентирован на подготовку младших школьников по направлениям дисциплин
-          математика, физика, черчение, электроника, робототехника, паяльные работы.</p>
-        <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-md-10 text-center robot text-white mx-auto pt-5 pb-5">
-        <h2>Робототехника</h2>
-        <div class=" outer_class">4-5 классы</div>
-        <div class=" outer_class">6-8 классы</div>
-        <div class=" outer_class">9-10 классы</div>
-        <p class="col-md-9 mx-auto ">Курс ориентирован на изучение электронных модулей,программирование систем
-          управления на основе устройств Arduino.</p>
-        <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
-      </div>
-    </div>
+    <div class="row">
+      <header class="col-md-10 mx-auto">
+        <div class="col-md-12 mt-4 text-center">
 
-    <div class="row mt-5">
-      <div class="col-md-10 text-center it text-white mx-auto pt-5 pb-5">
-        <h2>IT</h2>
-        <div class=" outer_class">5-7 классы</div>
-        <div class=" outer_class">8-10 классы</div>
-        <div class=" outer_class">11 класс</div>
-        <p class="col-md-12 col-sm-12 mx-auto ">Алгоритмизация и программирование. <br>
-          Разработка сайтов и web-приложений. <br> Проектная работа школьников.</p>
-        <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
-      </div>
+            <p>Волгоградский государственный технический университет</p>
+          <h1>Инженерная школа</h1>
+          <p class="desc">Образовательные курсы для школьников</p>
+        </div>
+      </header>
     </div>
+    <main>
+      <div class="row mt-3">
+        <div class="col-md-10 text-center young_engineer text-white mx-auto pt-5 pb-5">
+          <h2>Юный инженер</h2>
+          <div class="mx-auto outer_class">1-3 классы</div>
+          <p class="col-md-8 mx-auto">Подготовка младших школьников по направлениям дисциплин
+            математика, физика, черчение, электроника, робототехника, паяльные работы.</p>
+          <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-10 text-center robot text-white mx-auto pt-5 pb-5">
+          <h2>Робототехника</h2>
+          <div class=" outer_class">4-5 классы</div>
+          <div class=" outer_class">6-8 классы</div>
+          <div class=" outer_class">9-10 классы</div>
+          <p class="col-md-8 mx-auto ">Электронные модули, сборка и программирование систем
+            управления на основе устройств Arduino.</p>
+          <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
+        </div>
+      </div>
 
-    <div class="row mt-5">
-      <div class="col-md-10 text-center text-white model mx-auto pt-5 pb-5">
-        <h2>Моделирование</h2>
-        <div class=" outer_class">5-7 классы</div>
-        <div class=" outer_class">8-10 классы</div>
-        <p class="col-md-6 mx-auto ">Технология 3D печати.<br> Авиамоделирование и судомоделирование</p>
-        <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
+      <div class="row mt-5">
+        <div class="col-md-10 text-center it text-white mx-auto pt-5 pb-5">
+          <h2>IT</h2>
+          <div class=" outer_class">5-7 классы</div>
+          <div class=" outer_class">8-10 классы</div>
+          <div class=" outer_class">11 класс</div>
+          <p class="col-md-12 col-sm-12 mx-auto ">Алгоритмизация и программирование. <br>
+            Разработка сайтов и web-приложений. <br> Проектная работа школьников.</p>
+          <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
+        </div>
       </div>
-    </div>
 
-    <div class="row mt-5">
-      <div class="col-md-10 text-center text-white discipline mx-auto pt-5 pb-5">
-        <h2>Подготовка к ОГЭ, ЕГЭ</h2>
-        <div class=" outer_class">8-9 классы</div>
-        <div class=" outer_class">10 класс</div>
-        <div class=" outer_class">11 класс</div>
-        <p class="col-md-6 mx-auto ">Подготовка к выпускной аттестации.<br>Естествознание, Русский язык и
-          Литература.<br> Математика, Физика и Химия.
-        </p>
-        <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
+      <div class="row mt-5">
+        <div class="col-md-10 text-center text-white model mx-auto pt-5 pb-5">
+          <h2>Моделирование</h2>
+          <div class=" outer_class">5-7 классы</div>
+          <div class=" outer_class">8-10 классы</div>
+          <p class="col-md-6 mx-auto ">Технология 3D печати.<br> Авиамоделирование и судомоделирование</p>
+          <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
+        </div>
       </div>
-    </div>
+
+      <div class="row mt-5">
+        <div class="col-md-10 text-center text-white discipline mx-auto pt-5 pb-5">
+          <h2>Подготовка к ОГЭ, ЕГЭ</h2>
+          <div class=" outer_class">8-9 классы</div>
+          <div class=" outer_class">10 класс</div>
+          <div class=" outer_class">11 класс</div>
+          <p class="col-md-6 mx-auto ">Подготовка к выпускной аттестации.<br>Естествознание, Русский язык и
+            Литература.<br> Математика, Физика и Химия.
+          </p>
+          <a href="https://forms.gle/qrtDGdoVPSxMiiyW6" class="btn btn-warning">Записаться</a>
+        </div>
+      </div>
+    </main>
+
     <hr class="mt-5">
+
     <footer class="col-md-12 text-center mt-3 mb-5">
       <h3>Контактная информация</h3>
-      <div><i class="fa fa-map-marker" aria-hidden="true"></i> 400005, г.Волгоград, ул.Советская, д.35 ауд. 507, 514</div>
+      <div><i class="fa fa-map-marker" aria-hidden="true"></i> 400005, г.Волгоград, ул.Советская, д.35 ауд. 507, 514
+      </div>
       <div><i class="fa fa-phone" aria-hidden="true"></i> +7 (8442) 24-84-23, +7 (8442) 24-84-21</div>
       <div><i class="fa fa-mobile" aria-hidden="true"></i> +7 (961) 062-43-19</div>
       <div><i class="fa fa-globe" aria-hidden="true"></i> <a href="http://fdp.vstu.ru">fdp.vstu.ru </a></div>
-      <div><i class="fa fa-envelope-o" aria-hidden="true"></i> fdp@vstu.ru, sci.vstu@gmail.com</div>
+      <div><i class="fa fa-envelope-o" aria-hidden="true"></i> sci.vstu@gmail.com</div>
     </footer>
   </div>
 </body>
